@@ -38,7 +38,7 @@
 .mainMaps {
   width: 100%;
   height: 90%;
-  padding: 2rem 25rem;
+  padding: 2rem 6rem;
 }
 
 .divMaps {
@@ -49,6 +49,7 @@
   align-items: center;
   gap: 1rem;
   background-color: rgba(150, 150, 150, 0.8);
+  border-radius: 8px;
 }
 
 .divMenu {
@@ -97,7 +98,7 @@
 }
 
 .imgMap {
-  width: 630px;
+  width: 690px;
   height: 590px;
 }
 
@@ -105,13 +106,14 @@
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: space-around;
   background-color: white;
   border-radius: 8px;
   padding: 1rem;
 }
 
 .divLegend {
-  width: 100%;
+  width: 20%;
   display: flex;
   align-items: start;
   justify-content: space-between;
