@@ -1,0 +1,137 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  background: var(--color-back);
+}
+
+.imgHome {
+  width: 100%;
+}
+
+.imgDesktop {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.imgMobile {
+  display: none;
+}
+
+.divMenu {
+  width: 30px;
+  height: 25px;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+
+.btMenu {
+  width: 30px;
+  height: 25px;
+  border: none;
+  background: transparent;
+}
+
+.btMaps {
+  position: fixed;
+  top: 45rem;
+  right: 20rem;
+}
+
+.imgMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.divBack {
+  width: 23%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.divBtHome {
+  width: 78%;
+  height: 9%;
+  position: fixed;
+  top: 3.5rem;
+  left: 0;
+}
+
+.divBtMaps {
+  width: 78%;
+  height: 8%;
+  position: fixed;
+  top: 30.4rem;
+  left: 0;
+  padding: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.pMaps{
+  font-size: large;
+  font-family: cursive;
+}
+
+.btDefault {
+  font-family: "Open Sans", sans-serif !important;
+  width: 140px;
+  height: 140px;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 0.5rem;
+  background-color: var(--color-bt1);
+  border: 0;
+  color: black;
+  border-radius: 100px;
+  transition: background-color 0.3s, color 0.3s;
+  text-transform: none;
+}
+
+.btDefault:hover {
+  background-color: var(--color-bt2);
+  color: white;
+}
+
+@media (max-width: 1570px) {
+  .btMaps {
+    position: fixed;
+    top: 45rem;
+    right: 10rem;
+  }
+}
+
+@media (max-width: 1170px) {
+  .btDefault {
+    width: 100px;
+    height: 100px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .imgDesktop {
+    display: none;
+  }
+  .btMaps {
+    display: none;
+  }
+  .imgMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

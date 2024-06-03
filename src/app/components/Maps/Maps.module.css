@@ -1,0 +1,267 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  background: var(--color-back);
+}
+
+.divHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--color-header);
+}
+
+.imgHome {
+  width: 60px;
+  height: 60px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  background-color: var(--color-footer);
+}
+
+.imgFooter {
+  width: 100%;
+}
+
+.mainMaps {
+  width: 100%;
+  height: 90%;
+  padding: 2rem 25rem;
+}
+
+.divMaps {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(150, 150, 150, 0.8);
+}
+
+.divMenu {
+  width: 20%;
+  height: 100%;
+  background-color: rgba(150, 150, 150, 0.8);
+  border-radius: 8px;
+}
+
+.divMapsAtual {
+  width: 80%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.divItens {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.5rem;
+  padding: 0.5rem;
+}
+
+.divItens :first-child {
+  border-top: 1px solid black;
+}
+
+.h2Itens {
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-weight: normal;
+  font-family: cursive;
+  border-bottom: 1px solid black;
+  padding: 1rem;
+}
+
+.h2Itens:hover {
+  background-color: var(--color-blur);
+}
+
+.h1Itens {
+  color: black;
+  font-weight: normal;
+  font-family: cursive;
+  padding: 1rem;
+}
+
+.imgMap {
+  width: 630px;
+  height: 590px;
+}
+
+.imgMaps {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.divLegend {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  border-left: 3px solid black;
+}
+
+.ulLegend{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.legendItens {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  color: black;
+  font-weight: normal;
+  font-family: cursive;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  list-style-type: none;
+}
+
+.legendItens:hover{
+  background-color: var(--color-footer);
+  border-radius: 8px;
+}
+
+.pDivLegend {
+  font-size: 25px;
+}
+
+.divBall0{
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+.divBall1 {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d232d2;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.divBall2 {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff5556;
+  border-radius: 50%;
+  border: 1px solid black;
+
+}
+.divBall3 {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c92cd;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.divBall4 {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f38120;
+  border-radius: 50%;
+  border: 1px solid black;
+
+}
+.divBall5 {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ae4c03;
+  border-radius: 50%;
+  border: 1px solid black;
+
+}
+.divBall6 {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bbd432;
+  border-radius: 50%;
+  border: 1px solid black;
+
+}
+.divBall7 {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1d323;
+  border-radius: 50%;
+  border: 1px solid black;
+
+}
+.divBall8 {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #01619b;
+  border-radius: 50%;
+  border: 1px solid black;
+
+}
+
+.divQrcode{
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.qrcode{
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: var(--color-footer);
+  border: 1px solid black;
+}
+
+.qrcode:hover{
+  background-color: var(--color-bt2);
+}
+
+.imgQrcode{
+  width: 50px;
+  height: 50px;
+}
