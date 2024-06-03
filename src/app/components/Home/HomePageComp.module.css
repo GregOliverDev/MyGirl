@@ -41,8 +41,8 @@
 
 .btMaps {
   position: fixed;
-  top: 45rem;
-  right: 20rem;
+  top: 70%;
+  right: 15%;
 }
 
 .imgMenu {
@@ -72,7 +72,7 @@
   width: 78%;
   height: 8%;
   position: fixed;
-  top: 30.4rem;
+  top: 73%;
   left: 0;
   padding: 0.9rem;
   display: flex;
@@ -81,7 +81,7 @@
 }
 
 .pMaps{
-  font-size: large;
+  font-size: x-large;
   font-family: cursive;
 }
 
