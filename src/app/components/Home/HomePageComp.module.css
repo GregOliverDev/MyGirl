@@ -24,65 +24,10 @@
   display: none;
 }
 
-.divMenu {
-  width: 30px;
-  height: 25px;
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-}
-
-.btMenu {
-  width: 30px;
-  height: 25px;
-  border: none;
-  background: transparent;
-}
-
 .btMaps {
   position: fixed;
   top: 70%;
   right: 15%;
-}
-
-.imgMenu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-
-.divBack {
-  width: 23%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-
-.divBtHome {
-  width: 78%;
-  height: 9%;
-  position: fixed;
-  top: 3.5rem;
-  left: 0;
-}
-
-.divBtMaps {
-  width: 78%;
-  height: 8%;
-  position: fixed;
-  top: 73%;
-  left: 0;
-  padding: 0.9rem;
-  display: flex;
-  align-items: center;
-  gap: 1.4rem;
-}
-
-.pMaps{
-  font-size: x-large;
-  font-family: cursive;
 }
 
 .btDefault {
@@ -107,9 +52,6 @@
 
 @media (max-width: 1570px) {
   .btMaps {
-    position: fixed;
-    top: 45rem;
-    right: 10rem;
   }
 }
 
@@ -126,7 +68,7 @@
     display: none;
   }
   .btMaps {
-    display: none;
+    
   }
   .imgMobile {
     display: flex;
