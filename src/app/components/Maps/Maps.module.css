@@ -236,7 +236,10 @@
 
 .selectContainer {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .selectContainer select {
@@ -272,4 +275,138 @@
   background-color: #fff;
   color: #333;
   font-family: cursive;
+}
+
+.divItensMobile {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 1600px) {
+  .imgMap {
+    width: 400px;
+    height: 390px;
+  }
+
+  .legendItens {
+    gap: 1rem;
+    font-size: 15px;
+  }
+
+  .h1Itens {
+    font-size: 1rem;
+  }
+
+  .selectContainer select {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .imgMaps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .imgMaps {
+    width: 100%;
+    height: 80%;
+  }
+
+  .divLegend {
+    width: 100%;
+    border: 0px solid;
+    border-top: 3px solid black;
+  }
+
+  .ulLegend {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .imgMap {
+    width: 350px;
+    height: 340px;
+  }
+
+  .legendItens {
+    gap: 0.5rem;
+    font-size: 13px;
+  }
+
+  .h1Itens {
+    font-size: 1rem;
+  }
+
+  .selectContainer select {
+    font-size: 1rem;
+  }
+
+  .qrcode {
+    width: 70px;
+    height: 70px;
+  }
+
+  .imgQrcode {
+    width: 35px;
+    height: 35px;
+  }
+
+  .homeMap {
+    width: 85%;
+  }
+}
+
+@media (max-width: 900px) {
+  .mainMaps {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 14%;
+  }
+  .h1Itens{
+    padding: 1rem 0.2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .divHeader{
+    justify-content: space-between;
+    padding: 0.5rem 1.3rem;
+  }
+
+  .mainMaps {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 10%;
+  }
+}
+
+@media (max-width: 550px) {
+  .mainMaps {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .divMaps{
+    padding: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .imgMap {
+    width: 250px;
+    height: 240px;
+  }
 }

@@ -42,7 +42,9 @@ export default function MapsComp() {
               <div className={styles.homeMap}>
                 <div className={styles.divItensMobile}>
                   <div className={styles.selectContainer}>
-                    <label htmlFor="andarSelect" className={styles.h1Itens}>Selecione o Andar:</label>
+                    <label htmlFor="andarSelect" className={styles.h1Itens}>
+                      Selecione o Andar:
+                    </label>
                     <select
                       id="andarSelect"
                       value={selectedAndar}
@@ -60,19 +62,20 @@ export default function MapsComp() {
                       ))}
                     </select>
                   </div>
-                </div>
-                <img
-                  src="/assets/Map.png"
-                  alt="imgMap"
-                  className={styles.imgMap}
-                />
-                <div className={styles.divQrcode}>
-                  <div className={styles.qrcode}>
-                    <img
-                      src="/assets/qrcode.png"
-                      alt="imgQrcode"
-                      className={styles.imgQrcode}
-                    />
+
+                  <img
+                    src="/assets/Map.png"
+                    alt="imgMap"
+                    className={styles.imgMap}
+                  />
+                  <div className={styles.divQrcode}>
+                    <div className={styles.qrcode}>
+                      <img
+                        src="/assets/qrcode.png"
+                        alt="imgQrcode"
+                        className={styles.imgQrcode}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
