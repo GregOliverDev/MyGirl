@@ -38,7 +38,11 @@
 .mainMaps {
   width: 100%;
   height: 100%;
-  padding: 2rem 6rem;
+  padding: 2rem 20%;
+}
+
+.homeMap {
+  width: 60%;
 }
 
 .divMaps {
@@ -52,42 +56,10 @@
   border-radius: 8px;
 }
 
-.divMenu {
-  width: 20%;
-  height: 100%;
-  background-color: rgba(150, 150, 150, 0.8);
-  border-radius: 8px;
-}
-
 .divMapsAtual {
-  width: 80%;
-  height: 100%;
-  padding: 1rem;
-}
-
-.divItens {
-  display: flex;
-  flex-direction: column;
-  margin-top: 3.5rem;
-  padding: 0.5rem;
-}
-
-.divItens :first-child {
-  border-top: 1px solid black;
-}
-
-.h2Itens {
   width: 100%;
   height: 100%;
-  color: black;
-  font-weight: normal;
-  font-family: cursive;
-  border-bottom: 1px solid black;
   padding: 1rem;
-}
-
-.h2Itens:hover {
-  background-color: var(--color-blur);
 }
 
 .h1Itens {
@@ -95,6 +67,7 @@
   font-weight: normal;
   font-family: cursive;
   padding: 1rem;
+  font-size: 1.5rem;
 }
 
 .imgMap {
@@ -113,7 +86,7 @@
 }
 
 .divLegend {
-  width: 20%;
+  width: 30%;
   display: flex;
   align-items: start;
   justify-content: space-between;
@@ -121,7 +94,7 @@
   border-left: 3px solid black;
 }
 
-.ulLegend{
+.ulLegend {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -141,7 +114,7 @@
   list-style-type: none;
 }
 
-.legendItens:hover{
+.legendItens:hover {
   background-color: var(--color-footer);
   border-radius: 8px;
 }
@@ -150,7 +123,7 @@
   font-size: 25px;
 }
 
-.divBall0{
+.divBall0 {
   width: 40px;
   display: flex;
   align-items: center;
@@ -176,7 +149,6 @@
   background-color: #ff5556;
   border-radius: 50%;
   border: 1px solid black;
-
 }
 .divBall3 {
   width: 40px;
@@ -195,7 +167,6 @@
   background-color: #f38120;
   border-radius: 50%;
   border: 1px solid black;
-
 }
 .divBall5 {
   width: 40px;
@@ -205,7 +176,6 @@
   background-color: #ae4c03;
   border-radius: 50%;
   border: 1px solid black;
-
 }
 .divBall6 {
   width: 40px;
@@ -215,7 +185,6 @@
   background-color: #bbd432;
   border-radius: 50%;
   border: 1px solid black;
-
 }
 .divBall7 {
   width: 40px;
@@ -225,7 +194,6 @@
   background-color: #f1d323;
   border-radius: 50%;
   border: 1px solid black;
-
 }
 .divBall8 {
   width: 40px;
@@ -235,10 +203,9 @@
   background-color: #01619b;
   border-radius: 50%;
   border: 1px solid black;
-
 }
 
-.divQrcode{
+.divQrcode {
   width: 100%;
   padding: 1rem;
   display: flex;
@@ -246,7 +213,7 @@
   justify-content: end;
 }
 
-.qrcode{
+.qrcode {
   width: 90px;
   height: 90px;
   display: flex;
@@ -258,11 +225,51 @@
   border: 1px solid black;
 }
 
-.qrcode:hover{
+.qrcode:hover {
   background-color: var(--color-bt2);
 }
 
-.imgQrcode{
+.imgQrcode {
   width: 50px;
   height: 50px;
+}
+
+.selectContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.selectContainer select {
+  appearance: none;
+  padding: 0.2rem 1.5rem;
+  font-size: 1.5rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.selectContainer select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.selectContainer::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.select {
+  color: #333;
+  font-family: cursive;
+}
+
+.option {
+  background-color: #fff;
+  color: #333;
+  font-family: cursive;
 }
