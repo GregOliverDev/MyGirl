@@ -125,6 +125,7 @@
 
 .divBall0 {
   width: 40px;
+    height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,75 +135,83 @@
 }
 .divBall1 {
   width: 40px;
+    height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #d232d2;
   border-radius: 50%;
-  border: 1px solid black;
+  
 }
 .divBall2 {
   width: 40px;
+    height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #ff5556;
   border-radius: 50%;
-  border: 1px solid black;
+  
 }
 .divBall3 {
   width: 40px;
+    height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #3c92cd;
   border-radius: 50%;
-  border: 1px solid black;
+  
 }
 .divBall4 {
   width: 40px;
+    height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #f38120;
   border-radius: 50%;
-  border: 1px solid black;
+  
 }
 .divBall5 {
   width: 40px;
+    height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #ae4c03;
   border-radius: 50%;
-  border: 1px solid black;
+  
 }
 .divBall6 {
   width: 40px;
+    height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #bbd432;
   border-radius: 50%;
-  border: 1px solid black;
+  
 }
 .divBall7 {
   width: 40px;
+    height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #f1d323;
   border-radius: 50%;
-  border: 1px solid black;
+  
 }
 .divBall8 {
   width: 40px;
+    height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #01619b;
   border-radius: 50%;
-  border: 1px solid black;
+  
 }
 
 .divQrcode {
@@ -284,6 +293,7 @@
   flex-direction: column;
   gap: 1rem;
 }
+
 
 @media (max-width: 1600px) {
   .imgMap {

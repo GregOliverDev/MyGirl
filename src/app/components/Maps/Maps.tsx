@@ -1,10 +1,13 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "./Maps.module.css";
 import Link from "next/link";
 
 export default function MapsComp() {
   const [selectedAndar, setSelectedAndar] = useState<string>("1");
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
+
   const andares = Array.from({ length: 10 }, (_, i) => `${i + 1}`);
 
   const handleAndarChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -22,6 +25,23 @@ export default function MapsComp() {
       andarSelect.textContent = `Andar ${selectedAndar}`;
     }
   }, [selectedAndar]);
+
+  const handleQRCodeClick = () => {
+    if (fileInputRef.current) {
+      fileInputRef.current.click();
+    }
+  };
+
+  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (file) {
+      const url = URL.createObjectURL(file);
+      if (videoRef.current) {
+        videoRef.current.src = url;
+        videoRef.current.play();
+      }
+    }
+  };
 
   return (
     <div className={styles.main}>
@@ -69,13 +89,21 @@ export default function MapsComp() {
                     className={styles.imgMap}
                   />
                   <div className={styles.divQrcode}>
-                    <div className={styles.qrcode}>
+                    <div className={styles.qrcode} onClick={handleQRCodeClick}>
                       <img
                         src="/assets/qrcode.png"
                         alt="imgQrcode"
                         className={styles.imgQrcode}
                       />
                     </div>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      capture="environment"
+                      ref={fileInputRef}
+                      onChange={handleFileChange}
+                      style={{ display: "none" }}
+                    />
                   </div>
                 </div>
               </div>
@@ -97,7 +125,9 @@ export default function MapsComp() {
                   ].map((legend, index) => (
                     <li key={index} className={styles.legendItens}>
                       <div className={styles[`divBall${index}`]}>
-                        <p className={styles.pDivLegend}>{index}</p>
+                        {index !== 0 && (
+                          <p className={styles.pDivLegend}>{index}</p>
+                        )}
                       </div>
                       {legend}
                     </li>
@@ -110,6 +140,9 @@ export default function MapsComp() {
       </div>
       <div className={styles.footer}>
         <img src="/assets/footer.png" alt="imgFooter" className="imgFooter" />
+      </div>
+      <div className={styles.cameraContainer}>
+        <video ref={videoRef} className={styles.video}></video>
       </div>
     </div>
   );
