@@ -1,8 +1,8 @@
 .main {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   background: var(--color-back);
@@ -12,59 +12,61 @@
   width: 100%;
 }
 
-.imgDesktop {
+.divMenu {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  background-color: #eeeeee;
+}
+
+.divMaps {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0.7em 0.5rem;
+  gap: 2.3rem;
+  background-color: #eeeeee;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  color: #808080;
+  margin-bottom: 0.5rem;
+}
+
+.iconMaps {
+  width: 40px;
+  height: 40px;
+}
+
+.divBtMenu {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  background-color: #1c1d22;
+}
+
+.divCoisaLinda{
+  display: flex;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
 }
 
-.imgMobile {
-  display: none;
+.icon1{
+  width: 44PX;
 }
 
-.btMaps {
-  position: fixed;
-  top: 70%;
-  right: 15%;
+.icon2{
+  width: 150px;
 }
 
-.btDefault {
-  font-family: "Open Sans", sans-serif !important;
-  width: 100px;
-  height: 100px;
-  font-size: 1.3rem;
-  font-weight: bold;
-  padding: 0.5rem;
-  background-color: var(--color-bt1);
-  border: 0;
-  color: black;
-  border-radius: 100px;
-  transition: background-color 0.3s, color 0.3s;
-  text-transform: none;
-}
-
-.btDefault:hover {
-  background-color: var(--color-bt2);
-  color: white;
+.btMenu{
+  position: relative;
+  width: 100%;
 }
 
 @media (max-width: 430px) {
-  .imgDesktop {
-    display: none;
-  }
-  .btDefault {
-    width: 80px;
-    height: 80px;
-    font-weight: bold;
-    font-size: 1rem;
-  }
-  .imgMobile {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
 }

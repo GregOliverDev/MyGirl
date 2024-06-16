@@ -1,94 +1,53 @@
 "use client";
+import { useState } from "react";
 import styles from "./HomePageComp.module.css";
-import { Button } from "@mui/material";
-import NextLink from "next/link";
 
 export default function HomePageComp() {
+  const [menu, setMenu] = useState(false);
+
+  function toggleSelect() {
+    setMenu(!menu);
+  }
+
+  function navigateToMaps() {
+    window.location.href = "/pages/Maps";
+  }
+
   return (
     <div className={styles.main}>
-      <div className={styles.btMaps}>
-        <Button
-          className={styles.btDefault}
-          href="/pages/Maps"
-          component={NextLink}
-        >
-          Maps
-        </Button>
+      <img src="/assets/Header.jpeg" alt="Home" className={styles.imgHome} />
+      <div className={styles.divBtMenu}>
+        <div className={styles.divCoisaLinda}>
+          <img
+            src="/assets/iconUser.jpeg"
+            alt="Home"
+            className={styles.icon1}
+          />
+          <div className={styles.btMenu} onClick={toggleSelect}>
+            <img
+              src="/assets/iconMenu.jpeg"
+              alt="Home"
+              className={styles.icon1}
+            />
+          </div>
+        </div>
+        <p>DESIGN</p>
+        <img src="/assets/imgIcons.jpeg" alt="Home" className={styles.icon2} />
       </div>
-      <div className={styles.imgDesktop}>
-        <img
-          src="/assets/HomeDesktop1.png"
-          alt="imgHomePage"
-          className={styles.imgHome}
-        />
-        <img
-          src="/assets/HomeDesktop2.png"
-          alt="imgHomePage"
-          className={styles.imgHome}
-        />
-        <img
-          src="/assets/HomeDesktop3.png"
-          alt="imgHomePage"
-          className={styles.imgHome}
-        />
-        <img
-          src="/assets/HomeDesktop4.png"
-          alt="imgHomePage"
-          className={styles.imgHome}
-        />
-        <img
-          src="/assets/HomeDesktop5.png"
-          alt="imgHomePage"
-          className={styles.imgHome}
-        />
-      </div>
-      <div className={styles.imgMobile}>
-        <img
-          src="/assets/HomeMobile1.png"
-          alt="imgHomePage"
-          className={styles.imgHome}
-        />
-        <img
-          src="/assets/HomeMobile1.2.png"
-          alt="imgHomePage"
-          className={styles.imgHome}
-        />
-        <img
-          src="/assets/HomeMobile1.3.png"
-          alt="imgHomePage"
-          className={styles.imgHome}
-        />
-        <img
-          src="/assets/HomeMobile2.png"
-          alt="imgHomePage"
-          className={styles.imgHome}
-        />
-        <img
-          src="/assets/HomeMobile3.png"
-          alt="imgHomePage"
-          className={styles.imgHome}
-        />
-        <img
-          src="/assets/HomeMobile4.png"
-          alt="imgHomePage"
-          className={styles.imgHome}
-        />
-        <img
-          src="/assets/HomeMobile5.png"
-          alt="imgHomePage"
-          className={styles.imgHome}
-        />
-        <img
-          src="/assets/HomeMobile6.png"
-          alt="imgHomePage"
-          className={styles.imgHome}
-        />
-        <img
-          src="/assets/HomeMobile7.png"
-          alt="imgHomePage"
-          className={styles.imgHome}
-        />
-      </div>
+      {menu && (
+        <div className={styles.divMenu}>
+          <img src="/assets/Menu.jpeg" alt="Menu" className={styles.imgHome} />
+          <div className={styles.divMaps} onClick={navigateToMaps}>
+            <img
+              src="/assets/mapsIcon.png"
+              alt="MapsIcon"
+              className={styles.iconMaps}
+            />
+            <p>Mapa FAE</p>
+          </div>
+        </div>
+      )}
+      <img src="/assets/Home.jpeg" alt="Home" className={styles.imgHome} />
     </div>
   );
 }
