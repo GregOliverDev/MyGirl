@@ -53,6 +53,7 @@
   align-items: center;
   gap: 1rem;
   padding: 1rem;
+  color: #fff;
 }
 
 .icon1 {
@@ -116,7 +117,7 @@
 @media (max-width: 450px) {
   .divMaps {
     padding: 0.5em 0.4rem;
-    gap: 1.8rem;
+    gap: 1.7rem;
   }
 
   .iconMaps {
@@ -128,7 +129,7 @@
 @media (max-width: 400px) {
   .divMaps {
     padding: 0.5em 0.4rem;
-    gap: 1.5rem;
+    gap: 1.4rem;
   }
 
   .iconMaps {
