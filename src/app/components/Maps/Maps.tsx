@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function MapsComp() {
   const [selectedAndar, setSelectedAndar] = useState<string>("Térreo");
 
-  const andares = ["Térreo", "1", "2", "3", "4", "5", "6", "7", "Cobertura"];
+  const andares = ["Térreo", "1", "2", "3", "4", "5", "6", "7","8", "Cobertura"];
 
   const handleAndarChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const andar = event.target.value;
