@@ -11,7 +11,7 @@
 .divHeader {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
   padding: 0.5rem;
   background-color: var(--color-header);
@@ -22,233 +22,42 @@
   height: 60px;
 }
 
-.footer {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.2rem;
-  background-color: var(--color-footer);
-}
-
-.imgFooter {
-  width: 100%;
-}
-
 .mainMaps {
   width: 100%;
-  height: 100%;
-  padding: 2rem 20%;
+  height: 100vh;
+  padding: 1rem;
+  color: #000;
 }
 
-.homeMap {
-  width: 60%;
-}
-
-.divMaps {
-  width: 100%;
-  height: 100%;
-  padding: 0.5rem;
+.imgMaps{
   display: flex;
   align-items: center;
-  gap: 1rem;
-  background-color: rgba(150, 150, 150, 0.8);
-  border-radius: 8px;
-}
-
-.divMapsAtual {
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-}
-
-.h1Itens {
-  color: black;
-  font-weight: normal;
-  font-family: cursive;
-  padding: 1rem;
-  font-size: 1.5rem;
-}
-
-.imgMap {
-  width: 690px;
-  height: 590px;
-}
-
-.imgMaps {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
-  border-radius: 8px;
-  padding: 1rem;
-}
-
-.divLegend {
-  width: 30%;
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
-  border-left: 3px solid black;
-}
-
-.ulLegend {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  flex-direction: column;
-  gap: 1rem;
   padding: 1rem;
+  border-radius: 6px;
+  gap: 1.5rem;
+  background-color: #b8b8b8;
 }
 
-.legendItens {
+.imgMapa{
   width: 100%;
-  display: flex;
-  gap: 2rem;
-  color: black;
-  font-weight: normal;
-  font-family: cursive;
-  font-size: 20px;
-  list-style-type: none;
-}
-
-.legendItens:hover {
-  background-color: var(--color-footer);
-  border-radius: 8px;
-}
-
-.pDivLegend {
-  font-size: 25px;
-}
-
-.divBall0 {
-  width: 40px;
-    height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: red;
-  border-radius: 50%;
-  border: 3px solid black;
-}
-.divBall1 {
-  width: 40px;
-    height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #d232d2;
-  border-radius: 50%;
-  
-}
-.divBall2 {
-  width: 40px;
-    height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ff5556;
-  border-radius: 50%;
-  
-}
-.divBall3 {
-  width: 40px;
-    height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #3c92cd;
-  border-radius: 50%;
-  
-}
-.divBall4 {
-  width: 40px;
-    height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f38120;
-  border-radius: 50%;
-  
-}
-.divBall5 {
-  width: 40px;
-    height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ae4c03;
-  border-radius: 50%;
-  
-}
-.divBall6 {
-  width: 40px;
-    height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #bbd432;
-  border-radius: 50%;
-  
-}
-.divBall7 {
-  width: 40px;
-    height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f1d323;
-  border-radius: 50%;
-  
-}
-.divBall8 {
-  width: 40px;
-    height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #01619b;
-  border-radius: 50%;
-  
-}
-
-.divQrcode {
-  width: 100%;
+  background-color: #fff;
   padding: 1rem;
-  display: flex;
-  align-items: end;
-  justify-content: end;
+  border-radius: 6px;
 }
 
-.qrcode {
-  width: 90px;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  padding: 1rem;
-  background-color: var(--color-footer);
-  border: 1px solid black;
+.h1Itens{
+font-size: larger;
 }
 
-.qrcode:hover {
-  background-color: var(--color-bt2);
-}
-
-.imgQrcode {
-  width: 50px;
-  height: 50px;
-}
-
+/*Selector*/
 .selectContainer {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  gap: 1rem;
 }
 
 .selectContainer select {
@@ -261,162 +70,8 @@
   cursor: pointer;
 }
 
-.selectContainer select:focus {
-  outline: none;
-  border-color: #007bff;
-}
-
-.selectContainer::after {
-  content: "\25BC";
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-
 .select {
   color: #333;
-  font-family: cursive;
-}
-
-.option {
-  background-color: #fff;
-  color: #333;
-  font-family: cursive;
-}
-
-.divItensMobile {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
 }
 
 
-@media (max-width: 1600px) {
-  .imgMap {
-    width: 400px;
-    height: 390px;
-  }
-
-  .legendItens {
-    gap: 1rem;
-    font-size: 15px;
-  }
-
-  .h1Itens {
-    font-size: 1rem;
-  }
-
-  .selectContainer select {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 1100px) {
-  .imgMaps {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .imgMaps {
-    width: 100%;
-    height: 80%;
-  }
-
-  .divLegend {
-    width: 100%;
-    border: 0px solid;
-    border-top: 3px solid black;
-  }
-
-  .ulLegend {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  .imgMap {
-    width: 350px;
-    height: 340px;
-  }
-
-  .legendItens {
-    gap: 0.5rem;
-    font-size: 13px;
-  }
-
-  .h1Itens {
-    font-size: 1rem;
-  }
-
-  .selectContainer select {
-    font-size: 1rem;
-  }
-
-  .qrcode {
-    width: 70px;
-    height: 70px;
-  }
-
-  .imgQrcode {
-    width: 35px;
-    height: 35px;
-  }
-
-  .homeMap {
-    width: 85%;
-  }
-}
-
-@media (max-width: 900px) {
-  .mainMaps {
-    width: 100%;
-    height: 100%;
-    padding: 2rem 14%;
-  }
-  .h1Itens{
-    padding: 1rem 0.2rem;
-  }
-}
-
-@media (max-width: 650px) {
-  .divHeader{
-    justify-content: space-between;
-    padding: 0.5rem 1.3rem;
-  }
-
-  .mainMaps {
-    width: 100%;
-    height: 100%;
-    padding: 2rem 10%;
-  }
-}
-
-@media (max-width: 550px) {
-  .mainMaps {
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .divMaps{
-    padding: 0;
-  }
-}
-
-@media (max-width: 500px) {
-  .imgMap {
-    width: 250px;
-    height: 240px;
-  }
-}
