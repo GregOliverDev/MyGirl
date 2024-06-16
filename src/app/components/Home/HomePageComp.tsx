@@ -31,7 +31,7 @@ export default function HomePageComp() {
             />
           </div>
         </div>
-        <p>DESIGN</p>
+        <p className={styles.pDesign}>DESIGN</p>
         <img src="/assets/imgIcons.jpeg" alt="Home" className={styles.icon2} />
       </div>
       {menu && (
