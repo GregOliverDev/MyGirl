@@ -47,7 +47,7 @@
   background-color: #1c1d22;
 }
 
-.divCoisaLinda{
+.divCoisaLinda {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,18 +55,115 @@
   padding: 1rem;
 }
 
-.icon1{
-  width: 44PX;
+.icon1 {
+  width: 44px;
 }
 
-.icon2{
+.icon2 {
   width: 150px;
 }
 
-.btMenu{
+.btMenu {
   position: relative;
   width: 100%;
 }
 
-@media (max-width: 430px) {
+.divDesktop {
+  display: none;
+}
+
+@media (min-width: 551px) {
+  .divDesktop {
+    display: none;
+  }
+
+  .imgHome {
+    display: none;
+  }
+
+  .divMenu {
+    display: none;
+  }
+
+  .divBtMenu {
+    display: none;
+  }
+
+  .divDesktop {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    background: #e5e5e5;
+  }
+
+  .h1Title {
+    color: #1c1d22;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .divMaps {
+    padding: 0.7em 0.5rem;
+    gap: 1.9rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .divMaps {
+    padding: 0.5em 0.4rem;
+    gap: 1.8rem;
+  }
+
+  .iconMaps {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 400px) {
+  .divMaps {
+    padding: 0.5em 0.4rem;
+    gap: 1.5rem;
+  }
+
+  .iconMaps {
+    width: 30px;
+    height: 30px;
+  }
+
+  .pText {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  .divMaps {
+    padding: 0.5em 0.4rem;
+    gap: 1.4rem;
+  }
+
+  .pText {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 350px) {
+  .divMaps {
+    padding: 0.5em 0.4rem;
+    gap: 1.4rem;
+  }
+
+  .iconMaps {
+    width: 25px;
+    height: 25px;
+  }
+
+  .pText {
+    font-size: 12px;
+  }
 }

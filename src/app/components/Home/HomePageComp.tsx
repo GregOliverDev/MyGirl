@@ -43,11 +43,15 @@ export default function HomePageComp() {
               alt="MapsIcon"
               className={styles.iconMaps}
             />
-            <p>Mapa FAE</p>
+            <p className={styles.pText}>Mapa FAE</p>
           </div>
         </div>
       )}
       <img src="/assets/Home.jpeg" alt="Home" className={styles.imgHome} />
+
+      <div className={styles.divDesktop}>
+        <h1 className={styles.h1Title}>Site indisponível para seu dispositivo</h1>
+      </div>
     </div>
   );
 }
