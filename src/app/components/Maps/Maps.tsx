@@ -1,26 +1,34 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Maps.module.css";
 import Link from "next/link";
 
 export default function MapsComp() {
-  const [selectedAndar, setSelectedAndar] = useState<string>("1");
+  const [selectedAndar, setSelectedAndar] = useState<string>("Térreo");
 
-  const andares = Array.from({ length: 10 }, (_, i) => `${i + 1}`);
+  const andares = ["Térreo", "1", "2", "3", "4", "5", "6", "7", "Cobertura"];
 
   const handleAndarChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const andar = event.target.value;
     setSelectedAndar(andar);
     const andarSelect = document.getElementById("AndarSelect");
     if (andarSelect) {
-      andarSelect.textContent = `Andar ${andar}`;
+      if (andar === "Térreo" || andar === "Cobertura") {
+        andarSelect.textContent = `${andar}`;
+      } else {
+        andarSelect.textContent = `Andar ${andar}`;
+      }
     }
   };
 
   useEffect(() => {
     const andarSelect = document.getElementById("AndarSelect");
     if (andarSelect) {
-      andarSelect.textContent = `Andar ${selectedAndar}`;
+      if (selectedAndar === "Térreo" || selectedAndar === "Cobertura") {
+        andarSelect.textContent = `${selectedAndar}`;
+      } else {
+        andarSelect.textContent = `Andar ${selectedAndar}`;
+      }
     }
   }, [selectedAndar]);
 
@@ -49,30 +57,31 @@ export default function MapsComp() {
             >
               {andares.map((andar) => (
                 <option key={andar} value={andar} className={styles.option}>
-                  Andar {andar}
+                  {andar === "Térreo" || andar === "Cobertura" ? andar : `Andar ${andar}`}
                 </option>
               ))}
             </select>
           </div>
           <div>
-            <img src={`/assets/Andares/Andar${selectedAndar}.png`} alt="Andar" className={styles.imgMapa} />
+            <img
+              src={`/assets/Andares/Andar${selectedAndar}.png`}
+              alt={`Andar ${selectedAndar}`}
+              className={styles.imgMapa}
+            />
           </div>
           <div className={styles.divLegend}>
             <p className={styles.h1Legend}>Legenda</p>
             <div className={styles.divItem}>
-              <div className={styles.divBall1}>
-              </div>
+              <div className={styles.divBall1}></div>
               <p>Banheiro</p>
             </div>
             <div className={styles.divItem}>
-              <div className={styles.divBall2}>
-              </div>
+              <div className={styles.divBall2}></div>
               <p>Salas de Aula</p>
             </div>
             <div className={styles.divItem}>
-              <div className={styles.divBall3}>
-              </div>
-              <p>Elevador</p>
+              <div className={styles.divBall3}></div>
+              <p>Elevador e Escada</p>
             </div>
           </div>
         </div>
