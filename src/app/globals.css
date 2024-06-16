@@ -83,6 +83,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  background: var(--color-back);
 
   --color-back: #e0e0e0;
   --color-bt1: #ffcb05;

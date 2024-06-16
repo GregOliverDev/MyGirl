@@ -29,7 +29,7 @@
   color: #000;
 }
 
-.imgMaps{
+.imgMaps {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,16 +40,62 @@
   background-color: #b8b8b8;
 }
 
-.imgMapa{
+.imgMapa {
   width: 100%;
   background-color: #fff;
   padding: 0.5rem;
   border-radius: 6px;
 }
 
-.h1Itens{
-font-size: larger;
+.h1Itens {
+  font-size: larger;
 }
+
+.divLegend {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.h1Legend {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: larger;
+}
+
+.divItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
+}
+
+.divBall1 {
+  width: 25px;
+  height: 25px;
+  background-color: #ffdd00;
+  border-radius: 50%;
+}
+
+.divBall2 {
+  width: 25px;
+  height: 25px;
+  background-color: #c885df;
+  border-radius: 50%;
+}
+
+.divBall3 {
+  width: 25px;
+  height: 25px;
+  background-color: #4ecaad;
+  border-radius: 50%;
+}
+
 
 /*Selector*/
 .selectContainer {
@@ -73,5 +119,3 @@ font-size: larger;
 .select {
   color: #333;
 }
-
-

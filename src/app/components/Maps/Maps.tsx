@@ -57,6 +57,24 @@ export default function MapsComp() {
           <div>
             <img src={`/assets/Andares/Andar${selectedAndar}.png`} alt="Andar" className={styles.imgMapa} />
           </div>
+          <div className={styles.divLegend}>
+            <p className={styles.h1Legend}>Legenda</p>
+            <div className={styles.divItem}>
+              <div className={styles.divBall1}>
+              </div>
+              <p>Banheiro</p>
+            </div>
+            <div className={styles.divItem}>
+              <div className={styles.divBall2}>
+              </div>
+              <p>Salas de Aula</p>
+            </div>
+            <div className={styles.divItem}>
+              <div className={styles.divBall3}>
+              </div>
+              <p>Elevador</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
