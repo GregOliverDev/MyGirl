@@ -49,6 +49,8 @@
 
 .h1Itens {
   font-size: larger;
+  display: flex;
+  text-align: center;
 }
 
 .divLegend {
@@ -95,7 +97,6 @@
   background-color: #4ecaad;
   border-radius: 50%;
 }
-
 
 /*Selector*/
 .selectContainer {
